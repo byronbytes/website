@@ -130,7 +130,7 @@ body{
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .text {
-  font-family: 'Anonymous Pro';
+  font-family: 'Arial';
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 4px;
@@ -142,6 +142,30 @@ body{
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760;
+}
+
+/* other thing */
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #222;
+}
+
+.module {
+  max-width: 250px;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(92, 22, 150), 
+      rgba(26, 25, 25, 0)
+    ) 1 100%;
 }
     
 </style>
@@ -156,8 +180,9 @@ body{
       
     <p>This is my personal website to showcase my standalone projects and what I've been doing lately.</p>
 
-      <p>  </p>
-      <p> If you would like to go to the LiteTools page, click here. </p>
+    <div class="module">
+     If you are looking for LiteTools related projects, you came to the wrong place. To check out LiteTools software, click (here).
+      </div>
         <h3> Projects</h3>
 <div>
     
@@ -175,6 +200,6 @@ body{
     </body>
      
   <div class="footer">
-  <h3>byron.lol - 2022 (v1.0)</h3>
+  <h3>byron.lol - 2022 (v1.1)</h3>
   </div>
   </html>
