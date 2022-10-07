@@ -3,58 +3,37 @@
   
   <style>
 body {
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  background-color: #000;
+  display: grid;
+  place-items: center;
+  background: #222;
 }
 
-.block {
+.module-border-wrap {
+  max-width: 250px;
+  padding: 1rem;
   position: relative;
-  margin: 300px auto 0;
-  width: 500px;
-  height: 250px;
-  background: linear-gradient(0deg, #000, #272727);
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
 }
 
-.block:before, .block:after {
-  content: '';
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-    #0000ff, #00ff00,#ffff00, #ff0000);
-  background-size: 400%;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  z-index: -1;
-  animation: steam 20s linear infinite;
-}
-
-@keyframes steam {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.block:after {
-  filter: blur(50px);
+.module {
+  background: #222;
+  color: white;
+  padding: 2rem;
 }
 </style>
 
     <body>
   <div class="header">
     <h1>Byron's Website</h1>
-    <div class="block"></block>
     <p>My website to show off some skills and personal projects.</p>
   </div>
-
-      <p> Hello there! This is my website that is seperate from LiteTools related projects. </p>
+<div class="module-border-wrap"><div class="module">
+C# Programmer and software developer.
+</div></div>
+      <p>  </p>
       <p> If you would like to go to the LiteTools page, click here: https://litetools.net </p>
       
       <h3> Projects</h3>
