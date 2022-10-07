@@ -1,5 +1,9 @@
 <html>
   <title>byron's site</title>
+    <meta content="byron's website" property="og:title" />
+    <meta content="a little website showcasing my current programming skills and more." property="og:description" />
+    <meta content="https://byron.lol" property="og:url" />
+    <meta content="" property="og:image" />
   <style>
     
 body {
@@ -137,9 +141,65 @@ body{
   stroke-dasharray: 760;
 }
     
+    /*Test */
+    @import "compass/css3";
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+  
+}
+
+.seperator-wrapper {
+  width: 100%;  
+  .seperator {
+    width: 3000px;
+    height: 5px;
+    animation: rotate 3s infinite linear;
+    -webkit-animation: rotate 3s infinite linear;
+  }
+  
+}
+
+@-webkit-keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to { 
+    background-position: 0px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to { 
+    background-position: 0px;
+  }
+}
+
+.gradient {
+  background: rgb(48,255,144); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(48,255,144,1) 0%, rgba(237,45,237,1) 25%, rgba(201,152,38,1) 50%, rgba(48,255,230,1) 75%, rgba(48,255,144,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(48,255,144,1)), color-stop(25%,rgba(237,45,237,1)), color-stop(50%,rgba(201,152,38,1)), color-stop(75%,rgba(48,255,230,1)), color-stop(100%,rgba(48,255,144,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 ); /* IE6-9 */
+
+}
+    
     
     
 </style>
+  <section class="seperator-wrapper">
+  <div class="seperator gradient">
+  </div>
+</section>
     <body>
          <div class="header">
     <p class="line-1 anim-typewriter">Hello, I'm Byron.</p>
@@ -147,11 +207,10 @@ body{
       <div class="module-border-wrap"><div class="module">
   I'm a Programmer and Software Developer. I focus with C# and Java, and I have plans to learn HTML / CSS.
 </div></div>
-      <p> Creating software since </p>
             <div class="svg-wrapper">
   <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
     <rect class="shape" height="60" width="320" />
-    <div class="text">2019</div>
+    <div class="text">Creating software since 2019</div>
   </svg>
 </div>
       
