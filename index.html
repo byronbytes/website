@@ -2,41 +2,55 @@
   <title>Byron's Site</title>
   
   <style>
-    .footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #282828;
-  color: white;/* Grey background */
-}
-    
-/* Style the header */
-.header {
-  padding: 80px;
-  text-align: center;
-  background: #282828;
-  color: white;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 28px;
-}
-
-/* Style the body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #242424;
-  text-align: center;
-  color: white;
+  padding: 0;
+  background-color: #000;
 }
-    
-    
+
+.block {
+  position: relative;
+  margin: 300px auto 0;
+  width: 500px;
+  height: 250px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
 </style>
 
     <body>
   <div class="header">
     <h1>Byron's Website</h1>
+    <div class="block"></block>
     <p>My website to show off some skills and personal projects.</p>
   </div>
 
