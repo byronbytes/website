@@ -6,7 +6,8 @@
     <meta content="" property="og:image" />
     <meta content="#1F2694" data-react-helmet="true" name="theme-color" />
 <style>
-    body {
+  
+  body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   text-align: center;
@@ -67,7 +68,6 @@ body {
   background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
-  filter: drop-shadow(0 0 0.75rem rgb(35, 6, 80));
 }
 .gradient-border:after {
   content: '';
@@ -145,6 +145,7 @@ p {
 	padding: 3vw;
 	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
+  filter: drop-shadow(0 0 0.75rem rgb(59, 68, 95));
 }
 
 .box:nth-child(2) {
@@ -199,7 +200,8 @@ p {
 </style>
 
 <body>
-    <div class="gradient-border" id="box">Byron's Links </div>
+  <div> <div class="gradient-border" id="box">Byron's Links </div> </div>
+    
 
 
     <div class="wrapper">
