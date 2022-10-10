@@ -197,7 +197,65 @@ p {
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
 
+@import "compass/css3";
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+  
+}
+
+.seperator-wrapper {
+  width: 100%;
+}
+  .seperator {
+    width: 3000px;
+    height: 5px;
+    animation: rotate 3s infinite linear;
+    -webkit-animation: rotate 3s infinite linear;
+  }
+
+
+@-webkit-keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to { 
+    background-position: 0px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to { 
+    background-position: 0px;
+  }
+}
+
+.gradient {
+  background: rgb(48,255,144); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(48,255,144,1) 0%, rgba(237,45,237,1) 25%, rgba(201,152,38,1) 50%, rgba(48,255,230,1) 75%, rgba(48,255,144,1) 100%); /* FF3.6+ */
+background: -webkit-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(48,255,144,1) 0%,rgba(237,45,237,1) 25%,rgba(201,152,38,1) 50%,rgba(48,255,230,1) 75%,rgba(48,255,144,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 ); /* IE6-9 */
+
+}
+
+
 </style>
+
+<section class="seperator-wrapper">
+  <div class="seperator gradient">
+  </div>
+</section>
+
+
 <header>
   <div> <div class="gradient-border" id="box">Byron's Links </div> </div>
   </header>
