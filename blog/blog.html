@@ -1,0 +1,387 @@
+<html>
+  <title>byron's site</title>
+    <meta content="byron's website" property="og:title" />
+    <meta content="a little website showcasing my current programming skills and more." property="og:description" />
+    <meta content="https://byron.lol" property="og:url" />
+    <meta content="" property="og:image" />
+    <meta content="#1F2694" data-react-helmet="true" name="theme-color" />
+  <style>
+    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  color: white;
+  place-items: center;
+  background: #222;
+  display: grid;
+}
+
+    .footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #282828;
+  color: white;/* Grey background */
+}
+    
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #282828;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 28px;
+}
+    
+    /* end of custom stuff */
+    
+    body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #222;
+}
+
+.module-border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+  padding: 3px;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.module {
+  background: #222;
+  color: white;
+  padding: 2rem;
+}
+    
+    html{
+  min-height: 100%;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+        
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 0 0.30rem white);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    /* Typewriter Effect - Header End */
+    
+    html, body {
+  background: rgb(20,20,20);
+  text-align: center;
+  height: 100%;
+}
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    margin: 0 auto;
+  width: 320px;  
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: 'Arial';
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+/* other thing */
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #222;
+}
+
+.module2 {
+  max-width: 250px;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(141, 30, 233), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+body{
+  font-family: 'Poppins', sans-serif;
+  
+  margin:0;
+  padding:0;
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  min-height: 100vh;
+  
+  background: #060c21;
+  color:#FFF;
+  /*
+  background: #DEDEDE;
+  color:#000;
+  */
+}
+
+.container{
+  position: relative;
+  width:90%;
+  
+  display:grid;
+  grid-template-columns: repeat(auto-fill , minmax(20%, 1fr));
+  grid-template-rows: auto;
+  grid-gap:0 40px;
+}
+
+.container .box {
+  position:relative;
+  height:auto;
+  padding:0px;
+  background:rgba(255,255,255,0.0);
+  
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  border: 1px solid #000;
+  /*
+  border: 1px solid #DEDEDE;
+  */
+  /*overflow:hidden;*/
+}
+
+.box .content { 
+  position:relative;  
+  padding:100px 20px;
+  background: #060c21;
+  color:#FFF;
+  /*
+  background: #DEDEDE;
+  colot:#000;
+  */
+  
+}
+.container .box:before {
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:-2px;
+  bottom:-2px;
+  right:-2px;
+  /*background:rgba(255,255,255,1);*/
+  background:#FFF;  
+  transform: skew(2deg,2deg);
+  z-index:-1;
+}
+
+.container .box:nth-child(1):before {
+  background:yellow;
+  background: linear-gradient(315deg, #ff0057,#e64a19)
+}
+.container .box:nth-child(1):hover:before {
+  /*z-index:1;*/ /*example*/
+}
+
+.container .box:nth-child(2):before {
+  background:red;
+  background: linear-gradient(315deg, #59A600,#008A9C)
+}
+
+.container .box:nth-child(2):hover:before {  
+  background: linear-gradient(315deg, #89ff00,#00E2FF)
+}
+
+.container .box:nth-child(3):before {
+  background:lime;
+  background: linear-gradient(315deg, #e91e63,#5d02ff)
+}
+
+.container .box:nth-child(4):before {
+  background:blue;
+  background: linear-gradient(315deg, #ff0000,#ffc107)
+}
+
+
+/*.container .box:after{*/
+.container .tape{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;  
+  width:100%;
+  height:100%;
+  background:rgba(255,255,0,0.0);   
+}
+.container .tape:after{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;  
+  height:100%;
+  width:50%;
+  margin-left:25%;
+  background: rgba(255,255,255,0.03);
+  background: rgba(0,0,0,0.1);
+  pointer-events:none;  
+  transform:skew(41deg);
+  overflow:hidden;
+  transition:0.25s; /* 0.5 0.75*/
+}
+
+.box:hover .tape:after{
+  width:100%;
+  margin-left:0%;
+  transform:skew(0deg);  /*180 0 360 -180 +135 -135*/
+ 
+}
+
+.box .content h2{
+  position:absolute;
+  top:-30px;
+  right:20px;
+  margin:0;
+  padding:0;
+  font-size:10em;
+  color:rgba(255,255,255,0.05);
+  /*color:#000;*/
+  transition: 0.25s;
+}
+
+.box:hover .content h2{ 
+  top:-50px;  
+  color:rgba(255,255,255,0.15);
+  /*color:rgba(0,0,0,0.25);*/
+}
+
+.box .content h3{ 
+  margin: 0 0 10px;
+  padding:0;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.box .content p{ 
+  margin:0;
+  padding:0;
+  color:#DEDEDE;
+  /*color:#333;*/
+  font-size:16px;
+}
+
+.box .content a{ 
+  position: relative;
+  margin:20px 0 0 0;
+  padding:10px 20px;
+  text-decoration:none;
+  border: 1px solid #fff;
+  color: #FFF;
+  /*color:#333;*/
+  display:inline-block;
+  transition: 0.5s;
+  visibility:hidden;
+  transform: translateY(10px);
+  opacity:0;
+}
+
+.box:hover .content a{ 
+  visibility:visible;
+  opacity:1;
+  transform: translateY(0px);
+}
+
+.box .content a:hover{ 
+  background:rgba(255,255,255,0.95);  
+  color:#222;
+  /*
+  color:#DEDEDE;
+  background:rgba(0,0,0,0.75);
+  */
+}
+
+
+
+  </style>
+  
+     <body>
+         <div class="header">
+    <p class="line-1 anim-typewriter">Blogpost blog = new Blogpost();</p>
+       </div>
+       
+        <div class="box">
+    <div class="content">
+      <div class="tape"></div>
+      <h2>01</h2>
+      <h3>Service One</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+      <a href="#">Read more...</a>
+    </div>
+  </div>
+       
