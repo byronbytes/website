@@ -46,11 +46,83 @@ body{
   background-color: rgb(25,25,25);  
 }
     
+     /* Typewriter Effect - Header Start */
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+    
+html{
+  min-height: 100%;
+}
+    
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 0 0.30rem white);
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+    /* Typewriter Effect - Header End */
+    
+    html, body {
+  background: rgb(20,20,20);
+  text-align: center;
+  height: 100%;
+}
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    margin: 0 auto;
+  width: 320px;  
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: 'Arial';
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+    
     </style>
   
    <body>
          <div class="header">
-           <h3> LiteTools is being discontinued soon. </h3>
+             <p class="line-1 anim-typewriter">10/21/22 - LiteTools is being discontinued soon.</p>
      </div>
 
      <p> It's time to move on from LiteTools. It was an amazing experience working on LiteTools, but I think the time has come. Honestly, I wasn't expecting
