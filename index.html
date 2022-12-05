@@ -56,6 +56,23 @@ body {
   filter: drop-shadow(0 0 0.75rem crimson);
 }
 
+.bg-image {
+  /* The image used */
+  background-image: url("/img/bgTest1.png");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .module {
   background: #222;
   color: white;
@@ -167,6 +184,8 @@ body {
 
    
 </style>
+<div class="bg-image"></div>
+
     <body>
          <div class="header">
     <p class="line-1 anim-typewriter">Hello, I'm Byron();</p>
