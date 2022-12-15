@@ -1,151 +1,171 @@
 <html>
-    <!--> This is my own hand-made website. If you see this, you probably opened developer console. <!-->
-    
-     <!-->Planning on working on something big.<!-->
-    
-    <title>byron's site</title>
-    <meta content="byron's website" property="og:title" />
-    <meta content="a redesigned version of my website." property="og:description" />
-    <meta content="https://byron.lol" property="og:url" />
-    <meta content="" property="og:image" />
-    <meta content="#3BF5F3" data-react-helmet="true" name="theme-color" />
+<!-- This is my own hand-made website. If you see this, you probably opened developer console. -->
+
+<!-- Planning on working on something big.-->
+
+<title>byron's site</title>
+<meta content="byron's website" property="og:title" />
+<meta content="a redesigned version of my website." property="og:description" />
+<meta content="https://byron.lol" property="og:url" />
+<meta content="" property="og:image" />
+<meta content="#3BF5F3" data-react-helmet="true" name="theme-color" />
 
 
 <style>
-body, html {
-    /* Basic HTML formatting such as background color, font, etc. */
-    height: 100%;
-    font-family: 'Anonymous Pro', monospace; 
-    background-color: #1e1e1e;
-    scroll-behavior: smooth;
-  }
-  #projects{
-    height: 100%;
-    font-family: 'Anonymous Pro', monospace; 
-    background-color: #1e1e1e;
-    scroll-behavior: smooth;
-    color: white;
-  }
+	body,
+	html {
+		/* Basic HTML formatting such as background color, font, etc. */
+		height: 100%;
+		font-family: 'Anonymous Pro', monospace;
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+	}
 
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-    /* Support for adding background images */
-  .bg-image {
-    /* The image used */
-    background-image: url("/img/bgTest1.png");
-  
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #61a8ff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-  }
+	#projects {
+		height: 100%;
+		font-family: 'Anonymous Pro', monospace;
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+		color: white;
+	}
 
-    /* Typewriter Effect - Header Start */
-    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-    
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-}
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 3s steps(45) 1s 1 normal both,
-             blinkTextCursor 500ms steps(45) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 12em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
+	* {
+		box-sizing: border-box;
+	}
 
-/* Style the header */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: #282828;
-  color: white;
-}
+	/* Support for adding background images */
+	.bg-image {
+		/* The image used */
+		background-image: url("/img/bgTest1.png");
 
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 28px;
-}
+		/* Add the blur effect */
+		filter: blur(8px);
+		-webkit-filter: blur(8px);
 
-.module-border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, crimson, rgb(71, 11, 139));
-  padding: 3px;
-  filter: drop-shadow(0 0 0.75rem crimson);
-}
+		/* Full height */
+		height: 100%;
 
-.module {
-  background: #222;
-  color: white;
-  padding: 2rem;
-}
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
+	/* Position text in the middle of the page/image */
+	.bg-text {
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 0, 0.4);
+		/* Black w/opacity/see-through */
+		color: white;
+		font-weight: bold;
+		border: 3px solid #61a8ff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+	}
+
+	/* Typewriter Effect - Header Start */
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+	.line-1 {
+		position: relative;
+		top: 50%;
+		width: 24em;
+		margin: 0 auto;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		font-size: 180%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		transform: translateY(-50%);
+	}
+
+	/* Animation */
+	.anim-typewriter {
+		animation: typewriter 3s steps(45) 1s 1 normal both,
+			blinkTextCursor 500ms steps(45) infinite normal;
+	}
+
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+
+		to {
+			width: 12em;
+		}
+	}
+
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: rgba(255, 255, 255, .75);
+		}
+
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	/* Style the header */
+	.header {
+		padding: 30px;
+		text-align: center;
+		background: #282828;
+		color: white;
+	}
+
+	/* Increase the font size of the h1 element */
+	.header h1 {
+		font-size: 28px;
+	}
+
+	.module-border-wrap {
+		max-width: 250px;
+		padding: 1rem;
+		position: relative;
+		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+		padding: 3px;
+		filter: drop-shadow(0 0 0.75rem crimson);
+	}
+
+	.module {
+		background: #222;
+		color: white;
+		padding: 2rem;
+	}
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div class="bg-image"></div>
 <div class="bg-text">
-<h1 class="line-1 anim-typewriter">Hello, I'm Byron();</h1>
-<a href= "/test">Sandbox</a>  <a href= "/blog/blog">Blog</a>
-<p>This is what the new website layout might look like!</p>
-<p>Stay tuned.</p>
-  <p> </p>
-  <p> </p>
-<h1>What do I do?</h1>
-<p>I'm a programmer and software developer. I'm learning C#, Java, HTML and CSS.</p>
-<p>Previously I used to run a business called LiteTools.</p>
-<a href="https://github.com/byronbytes" style="color: white"><i class="fa fa-github"></i></a><a href="https://twitter.com/byronbytes" style="color: white"><i class="fa fa-twitter"></i></a><a href="https://youtube.com/@byronbytes" style="color: white"><i class="fa fa-youtube"></i></a> <a href="https://stackoverflow.com/users/13506993/matty" style="color: white"><i class="fa fa-stackoverflow"></i></a>
+	<h1 class="line-1 anim-typewriter">Hello, I'm Byron();</h1>
+	<a href="/test">Sandbox</a> <a href="/blog/blog">Blog</a>
+	<p>This is what the new website layout will look like!</p>
+	<p>Stay tuned for more updates.</p>
+	<p> </p>
+	<p> </p>
+	<h1>What do I do?</h1>
+	<p>I'm a programmer and software developer. I'm learning C#, Java, HTML and CSS.</p>
+	<p>Previously I used to own a business.</p>
+	<a href="https://github.com/byronbytes" style="color: white"><i class="fa fa-github"></i></a><a
+		href="https://twitter.com/byronbytes" style="color: white"><i class="fa fa-twitter"></i></a><a
+		href="https://youtube.com/@byronbytes" style="color: white"><i class="fa fa-youtube"></i></a> <a
+		href="https://stackoverflow.com/users/13506993/matty" style="color: white"><i class="fa fa-stackoverflow"></i></a>
 </div>
 </div>
 
 <div class="main" id="projects">
-  <h1>Projects</h1>
-    <p>I have developed the following projects.</p>
-     <!--> TODO: Add the projects and make it look fancy. <!-->
+	<h1>Projects</h1>
+	<p>I have developed the following projects.</p>
+	<!-- TODO: Add the projects and make it look fancy. -->
 </div>
+
 </html>
