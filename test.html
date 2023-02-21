@@ -17,6 +17,15 @@
   display: grid;
 }
 
+#software {
+      	height: 100%;
+      	font-family: 'Arial';
+      	background-color: #1e1e1e;
+      	scroll-behavior: smooth;
+      	color: white;
+      	text-align: center;
+      }
+
     .footer {
   padding: 20px; /* Some padding */
   text-align: center; /* Center text*/
@@ -76,7 +85,7 @@ body {
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
+  height: calc(100% + var(--borderWidth) * 1);
   width: calc(100% + var(--borderWidth) * 2);
   background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
@@ -258,13 +267,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', end
   </div>
   </header>
 
-<body>
- 
+
+<div class="main" id = "software">
   <h2>Select a category</h2>
     <div class="wrapper">
 	<div class="box">
 		<p>Utilities</p>
-	</div>
-	    
-    </body>
+	</div>  
+  </div>
 </html>
