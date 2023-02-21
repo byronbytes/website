@@ -1,257 +1,291 @@
 <html>
-  <title>byron's site</title>
-    <meta content="byron's website" property="og:title" />
-    <meta content="a little website showcasing my current programming skills and more." property="og:description" />
-    <meta content="https://byron.lol" property="og:url" />
-    <meta content="" property="og:image" />
-    <meta content="#1F2694" data-react-helmet="true" name="theme-color" />
-  <style>
-    
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  text-align: center;
-  color: white;
-  place-items: center;
-  background: #222;
-  display: grid;
-  scroll-behavior: smooth;
-}
+   <!-- This is my own hand-made website. If you see this, you probably opened developer console. -->
+   <!-- Planning on working on something big.-->
+   <title>byron's site</title>
+   <meta content="byron's website" property="og:title" />
+   <meta content="a redesigned version of my website." property="og:description" />
+   <meta content="https://byron.lol" property="og:url" />
+   <meta content="" property="og:image" />
+   <meta content="#3BF5F3" data-react-helmet="true" name="theme-color" />
 
-    .footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #282828;
-  color: white;/* Grey background */
-}
-    
-/* Style the header */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: #282828;
-  color: white;
-}
 
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 28px;
-}
-    
-    /* end of custom stuff */
-    
-    body {
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  background: #222;
-}
+   <style>
+      body,
 
-.module-border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, crimson, rgb(71, 11, 139));
-  padding: 3px;
-  filter: drop-shadow(0 0 0.75rem crimson);
-}
+      html {
+      	/* Basic HTML formatting such as background color, font, etc. */
+      	height: 100%;
+      	font-family: 'Anonymous Pro', monospace;
+      	background-color: #1e1e1e;
+      	scroll-behavior: smooth;
+      }
 
-.bg-image {
-  /* The image used */
-  background-image: url("img/bgTest1.png");
+      #projects {
+      	height: 100%;
+      	font-family: 'Arial';
+      	background-color: #1e1e1e;
+      	scroll-behavior: smooth;
+      	color: white;
+      	text-align: center;
+      }
 
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+	  .footer {
+		position: relative;
+		left: 5px;
+		bottom: 10px;
+		right: 5px; 
+		width: 100%;
+		background-color: rgb(35, 35, 35);
+		color: white;
+		text-align: center;
+		padding-top: 10px;
+  		padding-right: 10px;
+  		padding-bottom: 10px;
+  		padding-left: 10px;
+		}
 
-  /* Full height */
-  height: 100%;
+      /* URL Visit Links */
+      a:link {
+      	color: rgb(1, 23, 224);
+      	background-color: transparent;
+      	text-decoration: none;
+      }
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+      a:visited {
+      	color: rgb(182, 92, 235);
+      	background-color: transparent;
+      	text-decoration: none;
+      }
 
-.module {
-  background: #222;
-  color: white;
-  padding: 2rem;
-}
-    
-    /* Typewriter Effect - Header Start */
-    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-    
-html{
-  min-height: 100%;
-}
-body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255,255,255,.75);
-  font-family: 'Anonymous Pro', monospace;  
-  background-color: rgb(25,25,25);  
-}
-    
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    filter: drop-shadow(0 0 0.30rem white);
-}
+      a:active {
+      	color: rgb(24, 44, 155);
+      	background-color: transparent;
+      }
+      /* URL Visit Links */
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
-    /* Typewriter Effect - Header End */
-    
-    html, body {
-  background: rgb(20,20,20);
-  text-align: center;
-  height: 100%;
-}
-.svg-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-    margin: 0 auto;
-  width: 320px;  
-}
-.shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 8px;
-  fill: transparent;
-  stroke: #19f6e8;
-  border-bottom: 5px solid black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-}
-.text {
-  font-family: 'Arial';
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 4px;
-  color: #fff;
-  top: -48px;
-  position: relative;
-}
-.svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
-}
+      * {
+      	box-sizing: border-box;
+      }
 
-/* other thing */
+      /* Support for adding background images */
+      .bg-image {
+      /* The image used */
+      	background-image: url("/img/bgTest1.png");
+      /* Add the blur effect */
+      	filter: blur(14px);
+      	-webkit-filter: blur(14px);
+      /* Full height */
+      	height: 100%;
+      /* Center and scale the image nicely */
+      	background-position: center;
+      	background-repeat: no-repeat;
+      	background-size: cover;
+      }
 
-body {
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  background: #222;
-}
+      /* Position text in the middle of the page/image */
+      .bg-text {
+      	background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      	background-color: rgba(0, 0, 0, 0.5);
+      /* Black w/opacity/see-through */
+      	color: white;
+      	font-weight: bold;
+      	border: 3px solid #005fd4;
+      	position: absolute;
+      	top: 50%;
+      	left: 50%;
+      	transform: translate(-50%, -50%);
+      	z-index: 2;
+      	width: 80%;
+      	padding: 20px;
+      	text-align: center;
+      }
 
-.module2 {
-  max-width: 250px;
-  padding: 1rem;
-  color: white;
-  border-width: 3px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(141, 30, 233), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
-}
+      /* Typewriter Effect - Header Start */
+      @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-   
-</style>
-<div class="bg-image"></div>
+      .line-1 {
+      	position: relative;
+      	top: 50%;
+      	width: 24em;
+      	margin: 0 auto;
+      	border-right: 2px solid rgba(255, 255, 255, .75);
+      	font-size: 180%;
+      	text-align: center;
+      	white-space: nowrap;
+      	overflow: hidden;
+      	transform: translateY(-50%);
+      }
 
-    <body>
-         <div class="header">
-    <p class="line-1 anim-typewriter">Hello, I'm Byron();</p>
-    <a href="https://byron.lol/software" style="color: gray">
-      Software Archive
-      </a>
- <p>  </p>
-          
-               <a href="https://byron.lol/blog/blog" style="color: gray">
-      Blog
-      </a>
+      /* Animation */
+      .anim-typewriter {
+      	animation: typewriter 3s steps(45) 1s 1 normal both,
+      	blinkTextCursor 500ms steps(45) infinite normal;
+      }
+
+      @keyframes typewriter {
+      from 
+	  {
+      	width: 0;
+      }
+      to 
+	  {
+      	width: 12em;
+      }
+    }
+
+      @keyframes blinkTextCursor {
+      from 
+	  {
+      	border-right-color: rgba(255, 255, 255, .75);
+      }	
+      to 
+	  {
+      	border-right-color: transparent;
+      }
+    }
+
+      /* Style the header */
+      .header {
+      	padding: 30px;
+      	text-align: center;
+      	background: #282828;
+      	color: white;
+      }
+
+      /* Increase the font size of the h1 element */
+      .header h1 {
+      	font-size: 28px;
+      }
+
+      .module-border-wrap {
+      	max-width: 250px;
+      	padding: 1rem;
+      	position: relative;
+      	background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+      	padding: 3px;
+      	filter: drop-shadow(0 0 0.75rem crimson);
+      }
+
+      .module {
+      	background: #222;
+      	color: white;
+      	padding: 2rem;
+      }
+
+      details {
+      	width: 50%;
+      	margin: 0 auto ;
+      	background: #282828;
+      	margin-bottom: .5rem;
+      	box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+      	border-radius: 5px;
+      	overflow: hidden;
+		   padding-top: 2.2px;
+  		   padding-right: 2.2px;
+  		   padding-bottom: 2.2px;
+      }
+
+      summary {
+      	padding: 1rem;
+      	display: block;
+      	background: #333;
+      	padding-left: 2.2rem;
+      	position: relative;
+      	cursor: pointer;
+
+      }
+
+      summary:before {
+      	content: '';
+      	border-width: .4rem;
+      	border-style: solid;
+      	border-color: transparent transparent transparent #fff;
+      	position: absolute;
+      	top: 1.3rem;
+      	left: 1rem;
+      	transform: rotate(0);
+      	transform-origin: .2rem 50%;
+      	transition: .25s transform ease;
+      }
+
+      details[open] > summary:before {
+      	transform: rotate(90deg);
+      }
+
+      details summary::-webkit-details-marker {
+      	display:none;
+      }
+
+      details > ul {
+      padding-bottom: 1rem;
+      margin-bottom: 0;
+	  }
+   </style>
+
+
+   <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> --> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+   <div class="bg-image"></div>
+
+   <div class="bg-text">
+      <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+         <h1 class="line-1 anim-typewriter">Hello, I'm Byron();</h1>
+         | <a href="/software">Software Archive</a> | <a href="/blog/blog">Blog</a> | <a href="https://byron.lol/">Old Site</a> |
       </div>
-      <p>This is my personal website to showcase my standalone projects, my achievements, stuff about me, etc.</p>
+      <p>This website is where I showcase projects, videos, and more. Stay tuned for more updates.</p>
+
+
+      <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+         <h1>What do I do?</h1>
+      </div>
+      <p>I am most fluent with C# and Java, and currently work on Software Development and Programming.</p>
       <p> </p>
-      <div class="module-border-wrap"><div class="module">
-  My main profession is programming and software development. I have plans in the future to get into cybersecurity. Currently learning C# and Java.
-</div> 
-      </div>
-      <p> </p>
-      
-        <h3> Projects </h3>
-       <p>Check out my personal projects down below!</p> 
-        <p> </p>
-<div>
-    
-  <div class="svg-wrapper">
-    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-      <rect class="shape" height="60" width="320" />
-      <div class="text">
-          <a href="https://github.com/byronbytes/NoLexa" style="color: white">
-            NoLexa
-            </a>
-      </div>
-    </svg>
-</div>
 
-<div>
-  <div class="svg-wrapper">
-    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-      <rect class="shape" height="60" width="320" />
-      <div class="text">
-          <a href="https://github.com/LiteTools/Tasks" style="color: white">
-            Tasks
-            </a>
+      <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+         <h1>My Socials</h1>
+         <p>The icons are currently broken.</p>
       </div>
-    </svg>
-</div>
-  
-    
-<div>
-  <div class="svg-wrapper">
-    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-      <rect class="shape" height="60" width="320" />
-      <div class="text">
-           WIP!
+         <a href="https://github.com/byronbytes" style="color: rgb(255, 255, 255)"><i class="fa fa-github fa-2x"></i></a><a
+         href="https://twitter.com/byronbytes" style="color: rgb(255, 255, 255)"><i class="fa fa-twitter fa-2x"></i></a><a
+         href="https://youtube.com/@byronbytes" style="color: rgb(255, 255, 255)"><i class="fa fa-youtube fa-2x"></i></a><a
+		 href="https://discord.gg/gHb3vfESD5" style="color: rgb(255, 255, 255)"><i class="fa fa-discord fa-2x"></i></a></a>
       </div>
-    </svg>
-  </div>
-  </div>
-
-
-    </body>
+      </div>
      
-  <div class="footer">
-  <h3>byron.lol</h3>
-    <p>made with love by @byronbytes</p>
-  </div>
-  </html>
+      
+   </div>
+   </div>
+
+   <div class="main" id="projects">
+      <h1>
+         Projects 
+      </h1>
+      <p>I have been working on and developing the following projects.</p>
+
+      <details>
+         <summary>
+         🧹 Tasks
+         </summary>
+         Tasks is an application that optimizes computer performance. Tasks improves overall system performance, boot times, and a faster experience while using your computer.
+         Check out the repository <a href="https://github.com/LiteTools/Tasks">here</a> or <a href="https://github.com/LiteTools/Tasks/latest">download the latest version.</a>
+      </details>
+
+      <details>
+         <summary>
+         🚫 NoLexa
+         </summary>
+         A multi-purpose tweaking tool to remove Amazon Alexa from your device for good.
+         Check out the repository <a href="https://github.com/byronbytes/NoLexa">here</a>.
+      </details>
+
+   </div>
+   
+   <div class="footer">
+	Made with love by <a href=https://github.com/byronbytes> byronbytes </a>
+	</div>
+</html>
