@@ -125,6 +125,11 @@
 
 	/* Custom elements (boxes, typewriter effect, etc) */
 
+	.container {
+  display: flex;
+  justify-content: space-around
+}
+
 	* {
 		box-sizing: border-box;
 	}
@@ -244,9 +249,16 @@
 	<div class="animate__animated animate__fadeInUp animate__delay-0.5s">
 		<h1>What I do</h1>
 	</div>
-	
-	<h4>Programming</h4> <li>(C#, Java, HTML/CSS, Python)</li>
-	<h4>Cybersecurity</h4> <li>(Pentesting, Vulnerability searching)</li>
+
+	<div class='container'>
+		<h4>Programming</h4>
+		<li>C#, Java, HTML/CSS, Python</li>	
+	</div>
+
+	<div class='container'>
+		<h4>Cybersecurity</h4>
+		<li>Pentesting, Vulnerability searching</li>
+	</div>
 
 	<!-- put something here -->
 
