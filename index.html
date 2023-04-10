@@ -1,6 +1,5 @@
 <html>
 <!-- This is my own hand-made website. If you see this, you probably opened developer console. -->
-<!-- Planning on working on something big.-->
 <title>byron's site</title>
 <meta content="byron's website" property="og:title" />
 <meta content="my website for showcasing projects and more." property="og:description" />
@@ -10,23 +9,14 @@
 
 
 <style>
+	/* Default CSS elements (html, footer, URL, li, h4, h1) */
 	body,
 
 	html {
-		/* Basic HTML formatting such as background color, font, etc. */
 		height: 100%;
 		font-family: 'Anonymous Pro', monospace;
 		background-color: #1e1e1e;
 		scroll-behavior: smooth;
-	}
-
-	#projects {
-		height: 100%;
-		font-family: 'Arial';
-		background-color: #1e1e1e;
-		scroll-behavior: smooth;
-		color: white;
-		text-align: center;
 	}
 
 	.footer {
@@ -44,7 +34,6 @@
 		padding-left: 10px;
 	}
 
-	/* URL Visit Links */
 	a:link {
 		color: rgb(1, 23, 224);
 		background-color: transparent;
@@ -62,90 +51,6 @@
 		background-color: transparent;
 	}
 
-	/* URL Visit Links */
-
-	* {
-		box-sizing: border-box;
-	}
-
-	/* Support for adding background images */
-	.bg-image {
-		/* The image used */
-		background-image: url("/img/background2.png");
-		/* Add the blur effect */
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
-		/* Full height */
-		height: 100%;
-		/* Center and scale the image nicely */
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	/* Position text in the middle of the page/image */
-	.bg-text {
-		background-color: rgb(0, 0, 0);
-		/* Fallback color */
-		background-color: rgba(0, 0, 20, 0.4);
-		/* Black w/opacity/see-through */
-		color: white;
-		font-weight: bold;
-		border: 3px solid #00469b;
-		/* help i cant make it a god damn gradient */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 2;
-		width: 80%;
-		padding: 20px;
-		text-align: center;
-	}
-
-	/* Typewriter Effect - Header Start */
-	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-	.line-1 {
-		position: relative;
-		top: 50%;
-		width: 24em;
-		margin: 0 auto;
-		border-right: 2px solid rgba(255, 255, 255, .75);
-		font-size: 180%;
-		text-align: center;
-		white-space: nowrap;
-		overflow: hidden;
-		transform: translateY(-50%);
-	}
-
-	/* Animation */
-	.anim-typewriter {
-		animation: typewriter 3s steps(45) 1s 1 normal both,
-			blinkTextCursor 500ms steps(45) infinite normal;
-	}
-
-	@keyframes typewriter {
-		from {
-			width: 0;
-		}
-
-		to {
-			width: 12em;
-		}
-	}
-
-	@keyframes blinkTextCursor {
-		from {
-			border-right-color: rgba(255, 255, 255, .75);
-		}
-
-		to {
-			border-right-color: transparent;
-		}
-	}
-
-	/* Style the header */
 	.header {
 		padding: 30px;
 		text-align: center;
@@ -153,36 +58,21 @@
 		color: white;
 	}
 
-	/* Increase the font size of the h1 element */
 	.header h1 {
 		font-size: 28px;
 	}
 
+	.header h4 {
+		font-size: 30px;
+	}
+
 	li {
-		font-size: 12px;
+		font-size: 20px;
 		text-align: center;
 		color: rgb(200, 200, 200)
 	}
 
-	/* Custom header / subtext */
-	.header h4 {
-		font-size: 20px;
-	}
 
-	.module-border-wrap {
-		max-width: 250px;
-		padding: 1rem;
-		position: relative;
-		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
-		padding: 3px;
-		filter: drop-shadow(0 0 0.75rem crimson);
-	}
-
-	.module {
-		background: #222;
-		color: white;
-		padding: 2rem;
-	}
 
 	details {
 		width: 50%;
@@ -232,6 +122,105 @@
 		padding-bottom: 1rem;
 		margin-bottom: 0;
 	}
+
+	/* Custom elements (boxes, typewriter effect, etc) */
+
+	* {
+		box-sizing: border-box;
+	}
+
+	/* Support for adding background images */
+	.bg-image {
+		background-image: url("/img/background2.png");
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.bg-text {
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 20, 0.4);
+		color: white;
+		font-weight: bold;
+		border: 3px solid #00469b;
+		/* help i cant make it a god damn gradient */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+	}
+
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+	.line-1 {
+		position: relative;
+		top: 50%;
+		width: 24em;
+		margin: 0 auto;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		font-size: 180%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		transform: translateY(-50%);
+	}
+	.anim-typewriter {
+		animation: typewriter 3s steps(45) 1s 1 normal both,
+			blinkTextCursor 500ms steps(45) infinite normal;
+	}
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+
+		to {
+			width: 12em;
+		}
+	}
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: rgba(255, 255, 255, .75);
+		}
+
+		to {
+			border-right-color: transparent;
+		}
+	}
+
+	
+	.module-border-wrap {
+		max-width: 250px;
+		padding: 1rem;
+		position: relative;
+		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+		padding: 3px;
+		filter: drop-shadow(0 0 0.75rem crimson);
+	}
+
+	.module {
+		background: #222;
+		color: white;
+		padding: 2rem;
+	}
+
+	/* Subsections of site (Projects) */
+
+
+	#projects {
+		height: 100%;
+		font-family: 'Arial';
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+		color: white;
+		text-align: center;
+	}
+	
 </style>
 
 
