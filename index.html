@@ -1,298 +1,309 @@
 <html>
-   <!-- This is my own hand-made website. If you see this, you probably opened developer console. -->
-   <!-- Planning on working on something big.-->
-   <title>byron's site</title>
-   <meta content="byron's website" property="og:title" />
-   <meta content="my website for showcasing projects and more." property="og:description" />
-   <meta content="https://byron.lol" property="og:url" />
-   <meta content="" property="og:image" />
-   <meta content="#3BF5F3" data-react-helmet="true" name="theme-color" />
+<!-- This is my own hand-made website. If you see this, you probably opened developer console. -->
+<!-- Planning on working on something big.-->
+<title>byron's site</title>
+<meta content="byron's website" property="og:title" />
+<meta content="my website for showcasing projects and more." property="og:description" />
+<meta content="https://byron.lol" property="og:url" />
+<meta content="" property="og:image" />
+<meta content="#3BF5F3" data-react-helmet="true" name="theme-color" />
 
 
-   <style>
-      body,
+<style>
+	body,
 
-      html {
-      	/* Basic HTML formatting such as background color, font, etc. */
-      	height: 100%;
-      	font-family: 'Anonymous Pro', monospace;
-      	background-color: #1e1e1e;
-      	scroll-behavior: smooth;
-      }
+	html {
+		/* Basic HTML formatting such as background color, font, etc. */
+		height: 100%;
+		font-family: 'Anonymous Pro', monospace;
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+	}
 
-      #projects {
-      	height: 100%;
-      	font-family: 'Arial';
-      	background-color: #1e1e1e;
-      	scroll-behavior: smooth;
-      	color: white;
-      	text-align: center;
-      }
+	#projects {
+		height: 100%;
+		font-family: 'Arial';
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+		color: white;
+		text-align: center;
+	}
 
-	  .footer {
+	.footer {
 		position: relative;
 		left: 5px;
 		bottom: 10px;
-		right: 5px; 
+		right: 5px;
 		width: 100%;
 		background-color: rgb(35, 35, 35);
 		color: white;
 		text-align: center;
 		padding-top: 10px;
-  		padding-right: 10px;
-  		padding-bottom: 10px;
-  		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+
+	/* URL Visit Links */
+	a:link {
+		color: rgb(1, 23, 224);
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: rgb(182, 92, 235);
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: rgb(24, 44, 155);
+		background-color: transparent;
+	}
+
+	/* URL Visit Links */
+
+	* {
+		box-sizing: border-box;
+	}
+
+	/* Support for adding background images */
+	.bg-image {
+		/* The image used */
+		background-image: url("/img/background2.png");
+		/* Add the blur effect */
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		/* Full height */
+		height: 100%;
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/* Position text in the middle of the page/image */
+	.bg-text {
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 20, 0.4);
+		/* Black w/opacity/see-through */
+		color: white;
+		font-weight: bold;
+		border: 3px solid #00469b;
+		/* help i cant make it a god damn gradient */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+	}
+
+	/* Typewriter Effect - Header Start */
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+	.line-1 {
+		position: relative;
+		top: 50%;
+		width: 24em;
+		margin: 0 auto;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		font-size: 180%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		transform: translateY(-50%);
+	}
+
+	/* Animation */
+	.anim-typewriter {
+		animation: typewriter 3s steps(45) 1s 1 normal both,
+			blinkTextCursor 500ms steps(45) infinite normal;
+	}
+
+	@keyframes typewriter {
+		from {
+			width: 0;
 		}
 
-      /* URL Visit Links */
-      a:link {
-      	color: rgb(1, 23, 224);
-      	background-color: transparent;
-      	text-decoration: none;
-      }
+		to {
+			width: 12em;
+		}
+	}
 
-      a:visited {
-      	color: rgb(182, 92, 235);
-      	background-color: transparent;
-      	text-decoration: none;
-      }
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: rgba(255, 255, 255, .75);
+		}
 
-      a:active {
-      	color: rgb(24, 44, 155);
-      	background-color: transparent;
-      }
-      /* URL Visit Links */
+		to {
+			border-right-color: transparent;
+		}
+	}
 
-      * {
-      	box-sizing: border-box;
-      }
+	/* Style the header */
+	.header {
+		padding: 30px;
+		text-align: center;
+		background: #282828;
+		color: white;
+	}
 
-      /* Support for adding background images */
-      .bg-image {
-      /* The image used */
-      	background-image: url("/img/background2.png");
-      /* Add the blur effect */
-      	filter: blur(10px);
-      	-webkit-filter: blur(10px);
-      /* Full height */
-      	height: 100%;
-      /* Center and scale the image nicely */
-      	background-position: center;
-      	background-repeat: no-repeat;
-      	background-size: cover;
-      }
+	/* Increase the font size of the h1 element */
+	.header h1 {
+		font-size: 28px;
+	}
 
-      /* Position text in the middle of the page/image */
-      .bg-text {
-      	background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      	background-color: rgba(0, 0, 20, 0.4);
-      /* Black w/opacity/see-through */
-      	color: white;
-      	font-weight: bold;
-      	border: 3px solid #00469b; /* help i cant make it a god damn gradient */
-      	position: absolute;
-      	top: 50%;
-      	left: 50%;
-      	transform: translate(-50%, -50%);
-      	z-index: 2;
-      	width: 80%;
-      	padding: 20px;
-      	text-align: center;
-      }
+	li {
+		font-size: 12px;
+		text-align: center;
+		color: rgb(200, 200, 200)
+	}
 
-      /* Typewriter Effect - Header Start */
-      @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+	.module-border-wrap {
+		max-width: 250px;
+		padding: 1rem;
+		position: relative;
+		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+		padding: 3px;
+		filter: drop-shadow(0 0 0.75rem crimson);
+	}
 
-      .line-1 {
-      	position: relative;
-      	top: 50%;
-      	width: 24em;
-      	margin: 0 auto;
-      	border-right: 2px solid rgba(255, 255, 255, .75);
-      	font-size: 180%;
-      	text-align: center;
-      	white-space: nowrap;
-      	overflow: hidden;
-      	transform: translateY(-50%);
-      }
+	.module {
+		background: #222;
+		color: white;
+		padding: 2rem;
+	}
 
-      /* Animation */
-      .anim-typewriter {
-      	animation: typewriter 3s steps(45) 1s 1 normal both,
-      	blinkTextCursor 500ms steps(45) infinite normal;
-      }
+	details {
+		width: 50%;
+		margin: 0 auto;
+		background: #282828;
+		margin-bottom: .5rem;
+		box-shadow: 0 .1rem 1rem -.5rem rgba(0, 0, 0, .4);
+		border-radius: 5px;
+		overflow: hidden;
+		padding-top: 2.2px;
+		padding-right: 2.2px;
+		padding-bottom: 2.2px;
+	}
 
-      @keyframes typewriter {
-      from 
-	  {
-      	width: 0;
-      }
-      to 
-	  {
-      	width: 12em;
-      }
-    }
+	summary {
+		padding: 1rem;
+		display: block;
+		background: #333;
+		padding-left: 2.2rem;
+		position: relative;
+		cursor: pointer;
 
-      @keyframes blinkTextCursor {
-      from 
-	  {
-      	border-right-color: rgba(255, 255, 255, .75);
-      }	
-      to 
-	  {
-      	border-right-color: transparent;
-      }
-    }
+	}
 
-      /* Style the header */
-      .header {
-      	padding: 30px;
-      	text-align: center;
-      	background: #282828;
-      	color: white;
-      }
+	summary:before {
+		content: '';
+		border-width: .4rem;
+		border-style: solid;
+		border-color: transparent transparent transparent #fff;
+		position: absolute;
+		top: 1.3rem;
+		left: 1rem;
+		transform: rotate(0);
+		transform-origin: .2rem 50%;
+		transition: .25s transform ease;
+	}
 
-      /* Increase the font size of the h1 element */
-      .header h1 {
-      	font-size: 28px;
-      }
+	details[open]>summary:before {
+		transform: rotate(90deg);
+	}
 
-      .module-border-wrap {
-      	max-width: 250px;
-      	padding: 1rem;
-      	position: relative;
-      	background: linear-gradient(to right, crimson, rgb(71, 11, 139));
-      	padding: 3px;
-      	filter: drop-shadow(0 0 0.75rem crimson);
-      }
+	details summary::-webkit-details-marker {
+		display: none;
+	}
 
-      .module {
-      	background: #222;
-      	color: white;
-      	padding: 2rem;
-      }
-
-      details {
-      	width: 50%;
-      	margin: 0 auto ;
-      	background: #282828;
-      	margin-bottom: .5rem;
-      	box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
-      	border-radius: 5px;
-      	overflow: hidden;
-		   padding-top: 2.2px;
-  		   padding-right: 2.2px;
-  		   padding-bottom: 2.2px;
-      }
-
-      summary {
-      	padding: 1rem;
-      	display: block;
-      	background: #333;
-      	padding-left: 2.2rem;
-      	position: relative;
-      	cursor: pointer;
-
-      }
-
-      summary:before {
-      	content: '';
-      	border-width: .4rem;
-      	border-style: solid;
-      	border-color: transparent transparent transparent #fff;
-      	position: absolute;
-      	top: 1.3rem;
-      	left: 1rem;
-      	transform: rotate(0);
-      	transform-origin: .2rem 50%;
-      	transition: .25s transform ease;
-      }
-
-      details[open] > summary:before {
-      	transform: rotate(90deg);
-      }
-
-      details summary::-webkit-details-marker {
-      	display:none;
-      }
-
-      details > ul {
-      padding-bottom: 1rem;
-      margin-bottom: 0;
-	  }
-   </style>
+	details>ul {
+		padding-bottom: 1rem;
+		margin-bottom: 0;
+	}
+</style>
 
 
-   <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> --> 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 
-   <div class="bg-image"></div>
+<div class="bg-image"></div>
 
-   <div class="bg-text">
-      <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-         <h1 class="line-1 anim-typewriter">Hello, I'm Byron();</h1>
-      			| <a href="/blog">Blog</a> |
-      </div>
-      <p>I'm an enthusiast of all things tech related. Programming is one of my biggest hobbies and working
-	   with tech has been something I've always been interested in.</p>
-
-
-      <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-         <h1>What I do</h1>
-      </div>
-      <p>Programming</p>
-	   <li>C#, Java, HTML/CSS, and Python.</li>
-      <p>Cybersecurity</p>
-	   <li>Finding my way around restrictions, pentesting, and vulnerability searching.</li>
-	   
-	   <!-- put something here -->
-
-      <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-         <h1>Socials</h1>
-
-      </div class="animate__animated animate__fadeInUp animate__delay-0.6s">
-         <a href="https://github.com/byronbytes" style="color: rgb(255, 255, 255)"><i class="fab fa-github fa-2x"></i></a><a
-         href="https://twitter.com/byronbytes" style="color: rgb(255, 255, 255)"><i class="fab fa-twitter fa-2x"></i></a><a
-         href="https://youtube.com/@byronbytes" style="color: rgb(255, 255, 255)"><i class="fab fa-youtube fa-2x"></i></a><a
-	 href="https://discord.gg/tPVwNnzh5P" style="color: rgb(255, 255, 255)"><i class="fab fa-discord fa-2x"></i></a></a>
-      </div>
-      </div>
-     
-      
-   </div>
-   </div>
-
-   <div class="main" id="projects">
-      <h1>
-         Projects 
-      </h1>
-      <p>I have been working on and developing the following projects.</p>
-
-      <details>
-         <summary>
-         🧹 Tasks
-         </summary>
-         Tasks is an application that optimizes computer performance. Tasks improves overall system performance, boot times, and a faster experience while using your computer.
-         Check out the repository <a href="https://github.com/LiteTools/Tasks">here</a> or <a href="https://github.com/LiteTools/Tasks/latest">download the latest version.</a>
-      </details>
-
-      <details>
-         <summary>
-         🚫 NoLexa
-         </summary>
-         A multi-purpose tweaking tool to remove Amazon Alexa from your device for good.
-         Check out the repository <a href="https://github.com/byronbytes/NoLexa">here</a>.
-	  
-	You can also check out the official website for NoLexa <a href="https://byron.lol/nolexa">here</a>.
-      </details>
-
-   </div>
-   
-   <div class="footer">
-	Made with love by <a href=https://github.com/byronbytes> byronbytes </a>
+<div class="bg-text">
+	<div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+		<h1 class="line-1 anim-typewriter">Hello, I'm Byron();</h1>
+		| <a href="/blog">Blog</a> |
 	</div>
+	<p>I'm an enthusiast of all things tech related. Programming is one of my biggest hobbies and working
+		with tech has been something I've always been interested in.</p>
+
+
+	<div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+		<h1>What I do</h1>
+	</div>
+	<p>Programming</p>
+	<li>C#, Java, HTML/CSS, and Python.</li>
+	<p>Cybersecurity</p>
+	<li>Finding my way around restrictions, pentesting, and vulnerability searching.</li>
+
+	<!-- put something here -->
+
+	<div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+		<h1>Socials</h1>
+
+	</div class="animate__animated animate__fadeInUp animate__delay-0.6s">
+	<a href="https://github.com/byronbytes" style="color: rgb(255, 255, 255)"><i class="fab fa-github fa-2x"></i></a><a
+		href="https://twitter.com/byronbytes" style="color: rgb(255, 255, 255)"><i
+			class="fab fa-twitter fa-2x"></i></a><a href="https://youtube.com/@byronbytes"
+		style="color: rgb(255, 255, 255)"><i class="fab fa-youtube fa-2x"></i></a><a
+		href="https://discord.gg/tPVwNnzh5P" style="color: rgb(255, 255, 255)"><i
+			class="fab fa-discord fa-2x"></i></a></a>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<div class="main" id="projects">
+	<h1>
+		Projects
+	</h1>
+	<p>I have been working on and developing the following projects.</p>
+
+	<details>
+		<summary>
+			🧹 Tasks
+		</summary>
+		Tasks is an application that optimizes computer performance. Tasks improves overall system performance, boot
+		times, and a faster experience while using your computer.
+		Check out the repository <a href="https://github.com/LiteTools/Tasks">here</a> or <a
+			href="https://github.com/LiteTools/Tasks/latest">download the latest version.</a>
+	</details>
+
+	<details>
+		<summary>
+			🚫 NoLexa
+		</summary>
+		A multi-purpose tweaking tool to remove Amazon Alexa from your device for good.
+		Check out the repository <a href="https://github.com/byronbytes/NoLexa">here</a>.
+
+		You can also check out the official website for NoLexa <a href="https://byron.lol/nolexa">here</a>.
+	</details>
+
+</div>
+
+<div class="footer">
+	Made with love by <a href=https://github.com/byronbytes> byronbytes </a>
+</div>
+
 </html>

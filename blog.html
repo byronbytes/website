@@ -1,145 +1,144 @@
 <html>
-  <title>byron's site</title>
-    <meta content="byron's blog" property="og:title" />
-    <meta content="my blog for any upcoming announcements and life stuff" property="og:description" />
-    <meta content="https://byron.lol" property="og:url" />
-    <meta content="" property="og:image" />
-    <meta content="#1F2694" data-react-helmet="true" name="theme-color" />
-	
-	  <style>
-		  
-		  body,
-		  
-       html {
-      	/* Basic HTML formatting such as background color, font, etc. */
-      	height: 100%;
-      	font-family: 'Anonymous Pro', monospace;
-	       	background-color: #1e1e1e;
-      	scroll-behavior: smooth;
-      }
-		  
-      /* URL Visit Links */
-      a:link {
-      	color: rgb(1, 23, 224);
-      	background-color: transparent;
-      	text-decoration: none;
-      }
+<title>byron's site</title>
+<meta content="byron's blog" property="og:title" />
+<meta content="my blog for any upcoming announcements and life stuff" property="og:description" />
+<meta content="https://byron.lol" property="og:url" />
+<meta content="" property="og:image" />
+<meta content="#1F2694" data-react-helmet="true" name="theme-color" />
 
-      a:visited {
-      	color: rgb(182, 92, 235);
-      	background-color: transparent;
-      	text-decoration: none;
-      }
+<style>
+	body,
 
-      a:active {
-      	color: rgb(24, 44, 155);
-      	background-color: transparent;
-      }
-      /* URL Visit Links */
+	html {
+		/* Basic HTML formatting such as background color, font, etc. */
+		height: 100%;
+		font-family: 'Anonymous Pro', monospace;
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+	}
+
+	/* URL Visit Links */
+	a:link {
+		color: rgb(1, 23, 224);
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: rgb(182, 92, 235);
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: rgb(24, 44, 155);
+		background-color: transparent;
+	}
+
+	/* URL Visit Links */
 
 
-      /* Style the header */
-      .header {
-      	padding: 30px;
-      	text-align: center;
-      	background: #282828;
-      	color: white;
-      }
+	/* Style the header */
+	.header {
+		padding: 30px;
+		text-align: center;
+		background: #282828;
+		color: white;
+	}
 
-      /* Increase the font size of the h1 element */
-      .header h1 {
-      	font-size: 28px;
-      }
+	/* Increase the font size of the h1 element */
+	.header h1 {
+		font-size: 28px;
+	}
 
-.module-border-wrap {
-  max-width: 250px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, crimson, rgb(71, 11, 139));
-  padding: 3px;
-  filter: drop-shadow(0 0 0.75rem crimson);
-}
-
-.module {
-  background: #222;
-  color: white;
-  padding: 2rem;
-}
-		  
-		    /* Support for adding background images */
-      .bg-image {
-      /* The image used */
-      	background-image: url("/img/background2.png");
-      /* Add the blur effect */
-      	filter: blur(10px);
-      	-webkit-filter: blur(10px);
-      /* Full height */
-      	height: 100%;
-      /* Center and scale the image nicely */
-      	background-position: center;
-      	background-repeat: no-repeat;
-      	background-size: cover;
-      }
-
-      /* Position text in the middle of the page/image */
-      .bg-text {
-      	background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      	background-color: rgba(0, 0, 20, 0.5);
-      /* Black w/opacity/see-through */
-      	color: white;
-      	font-weight: bold;
-      	position: absolute;
-      	top: 50%;
-      	left: 50%;
-      	transform: translate(-50%, -50%);
-      	z-index: 2;
-      	width: 80%;
-      	padding: 10px;
-      	text-align: center;
-      }
-		  
 	.module-border-wrap {
-      	max-width: 250px;
-	font-family: 'Helvetica', sans-serif;
-      	padding: 1rem;
-      	position: relative;
-      	background: linear-gradient(to right, rgb(245,202,212,0.4), rgb(129,111,126,0.4));
-      	padding: 3px;
-	border: 2px solid #00469b;	
-      	filter: drop-shadow(0 0 0.70rem rgb(0,0,30,0.8));
-      }
+		max-width: 250px;
+		padding: 1rem;
+		position: relative;
+		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+		padding: 3px;
+		filter: drop-shadow(0 0 0.75rem crimson);
+	}
 
-      .module {
-      	background: #222;
-      	color: white;
-      	padding: 2rem;
-      }
+	.module {
+		background: #222;
+		color: white;
+		padding: 2rem;
+	}
 
-  </style>
-	      <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> --> 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	/* Support for adding background images */
+	.bg-image {
+		/* The image used */
+		background-image: url("/img/background2.png");
+		/* Add the blur effect */
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		/* Full height */
+		height: 100%;
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
-	<div class="bg-image"></div>
-	<div class="bg-text">
-			  <div class="animate__animated animate__fadeInUp animate__delay-0.5s">
-	    <h1>byron's blog</h1>
-				  <h3>Where I post updates and more.</h3>
-				  | <a href="https://byron.lol">Home</a> |
+	/* Position text in the middle of the page/image */
+	.bg-text {
+		background-color: rgb(0, 0, 0);
+		/* Fallback color */
+		background-color: rgba(0, 0, 20, 0.5);
+		/* Black w/opacity/see-through */
+		color: white;
+		font-weight: bold;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.module-border-wrap {
+		max-width: 250px;
+		font-family: 'Helvetica', sans-serif;
+		padding: 1rem;
+		position: relative;
+		background: linear-gradient(to right, rgb(245, 202, 212, 0.4), rgb(129, 111, 126, 0.4));
+		padding: 3px;
+		border: 2px solid #00469b;
+		filter: drop-shadow(0 0 0.70rem rgb(0, 0, 30, 0.8));
+	}
+
+	.module {
+		background: #222;
+		color: white;
+		padding: 2rem;
+	}
+</style>
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<div class="bg-image"></div>
+<div class="bg-text">
+	<div class="animate__animated animate__fadeInUp animate__delay-0.5s">
+		<h1>byron's blog</h1>
+		<h3>Where I post updates and more.</h3>
+		| <a href="https://byron.lol">Home</a> |
 	</div>
-	
 
-<div class="module-border-wrap">
-	 <h2>LiteTools End Of Life</h2>
-      <h3>10/21/22</h3>
-      <p>LiteTools is going to be reaching the end of life phase soon. Here's everything you need to know. </p>
-      <a href="/blog/2022/10/21.html">Read more...</a>
-    </div>
 
-    </div>
-  </div>
-  </div>
-     
+	<div class="module-border-wrap">
+		<h2>LiteTools End Of Life</h2>
+		<h3>10/21/22</h3>
+		<p>LiteTools is going to be reaching the end of life phase soon. Here's everything you need to know. </p>
+		<a href="/blog/2022/10/21.html">Read more...</a>
+	</div>
+
+</div>
+</div>
+</div>
+
 </html>
