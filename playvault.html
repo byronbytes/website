@@ -1,235 +1,32 @@
-<html> 
-  <title>byron's playvault.</title>
-    <meta content="playvault" property="og:title" />
-    <meta content="gaming is fun." property="og:description" />
-    <meta content="https://byron.lol" property="og:url" />
-	<meta content="https://byron.lol/img/53088136.jpg" property="og:image" />
-    <meta content="#1F2694" data-react-helmet="true" name="theme-color" />
-
-<style>
-
-  body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  text-align: center;
-  color: white;
-  place-items: center;
-  background: #222;
-  display: grid;
-}
-
-    .footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #282828;
-  color: white;/* Grey background */
-}
-	
-
-.header {
-  padding: 40px;
-  text-align: center;
-  background: #282828;
-  color: white;
-}
-
-	
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 28px;
-}
-    
-    /* end of custom stuff */
-
-	
-	
-    /* sexy top gradient */
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background: #1D1F20;
-}
-#box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 100px;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 2.5rem;
-}
-.gradient-border {
-  --borderWidth: 3px;
-  background: #1D1F20;
-  position: relative;
-  border-radius: var(--borderWidth);
-}
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--borderWidth));
-  left: calc(-1 * var(--borderWidth));
-  height: calc(100% + var(--borderWidth) * 2);
-  width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  border-radius: calc(2 * var(--borderWidth));
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:400");
-
-* {
-	box-sizing: border-box;
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 90deg;
-  inherits: true;
-}
-
-@property --gradX {
-  syntax: '<percentage>';
-  initial-value: 50%;
-  inherits: true;
-}
-
-@property --gradY {
-  syntax: '<percentage>';
-  initial-value: 0%;
-  inherits: true;
-}
-
-body {
-	font-family: Raleway, sans-serif;
-	text-align: center;
-	margin: 0;
-	padding: 1rem;
-	background-color: rgba(10, 12, 18, 1);
-	color: white;
-	min-height: 100vh;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-p {
-	margin: 0;
-}
-
-:root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: rgba(168, 239, 255, 1);
-	--c2: rgba(168, 239, 255, 0.1);
-}
-
-.wrapper {
-	min-width: min(40rem, 100%);
-}
-
-.box {
-	font-size: 3vw;
-	margin: max(1rem, 3vw);
-	border: 0.35rem solid;
-	padding: 3vw;
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
-  filter: drop-shadow(0 0 0.75rem rgb(59, 68, 95));
-}
-
-.box:nth-child(2) {
-	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
-	animation: borderRadial var(--d) linear infinite forwards;
-}
-
-@keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
-}
-
-@keyframes borderRadial {
-	20% {
-		--gradX: 100%;
-		--gradY: 50%;
-	}
-	40% {
-		--gradX: 100%;
-		--gradY: 100%;
-	}
-	60% {
-		--gradX: 50%;
-		--gradY: 100%;
-	}
-	80% {
-		--gradX: 0%;
-		--gradY: 50%;
-	}
-	100% {
-		--gradX: 50%;
-		--gradY: 0%;
-	}
-}
+<html>
+<title>playvault</title>
+<meta content="byron's playvault" property="og:title" />
+<meta content="gaming is fun." property="og:description" />
+<meta content="https://byron.lol" property="og:url" />
+<meta content="https://byron.lol/img/53088136.jpg" property="og:image" />
+<meta content="#000000" data-react-helmet="true" name="theme-color" />
 
 
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
-
-
-
-</style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="style.css">
 
-<header>
-	<h1> Playvault</h1>
-  </header>
 <body>
- 
-  
-    <div class="wrapper">
-	<div class="box">
-		<p>Games.</p>
-	</div>
-	    <p> Games embedded in a webframe so it doesn't appear in your search history. </p>
-		<p> An advanced game-player system is coming soon. </p>
-	    
-	    <iframe width="800" height="600"
-	src="https://www.play2048.co/">
-</iframe>
-	    
-	    <p>  </p>
-	    <p> </p>
-	    <p> [WIP] Snake </p>
-	  
-	    <iframe width="730" height="530"
-	src="https://example.com">
-</iframe>
-	    
-    </body>
+
+
+	<div class="wrapper">
+		<div class="box">
+			<p>Playvault</p>
+		</div>
+		<p> Games embedded in a webframe so it doesn't appear in your search history. </p>
+
+		<iframe width="800" height="600" src="https://www.play2048.co/">
+		</iframe>
+
+		<p> [WIP] Snake </p>
+		<iframe width="730" height="530" src="https://example.com">
+		</iframe>
+
+</body>
+
 </html>
