@@ -1,204 +1,204 @@
-/* Style for byron.lol   
+	/* Default CSS elements (html, footer, URL, li, h4, h1) */
+	body,
 
-html {
-      	/* Basic HTML formatting such as background color, font, etc. */
-      	height: 100%;
-      	font-family: 'Anonymous Pro', monospace;
-      	background-color: #1e1e1e;
-      	scroll-behavior: smooth;
-      }
+	html {
+		height: 100%;
+		font-family: 'Anonymous Pro', monospace;
+		background-color: #1e1e1e;
+		scroll-behavior: smooth;
+	}
 
-	  .footer {
+	.footer {
 		position: relative;
 		left: 5px;
 		bottom: 10px;
-		right: 5px; 
+		right: 5px;
 		width: 100%;
 		background-color: rgb(35, 35, 35);
 		color: white;
 		text-align: center;
 		padding-top: 10px;
-  		padding-right: 10px;
-  		padding-bottom: 10px;
-  		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+
+	a:link {
+		color: rgb(1, 23, 224);
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: rgb(182, 92, 235);
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:active {
+		color: rgb(24, 44, 155);
+		background-color: transparent;
+	}
+
+	.header {
+		padding: 30px;
+		text-align: center;
+		background: #282828;
+		color: white;
+	}
+
+	.header h1 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 25px;
+	}
+
+	li {
+		font-size: 16px;
+		text-align: center;
+		color: rgb(200, 200, 200)
+	}
+
+
+
+	details {
+		width: 50%;
+		margin: 0 auto;
+		background: #282828;
+		margin-bottom: .5rem;
+		box-shadow: 0 .1rem 1rem -.5rem rgba(0, 0, 0, .4);
+		border-radius: 5px;
+		overflow: hidden;
+		padding-top: 2.5px;
+		padding-right: 2.5px;
+		padding-bottom: 2.5px;
+	}
+
+	summary {
+		padding: 1rem;
+		display: block;
+		background: #333;
+		padding-left: 2.2rem;
+		position: relative;
+		cursor: pointer;
+
+	}
+
+	summary:before {
+		content: '';
+		border-width: .4rem;
+		border-style: solid;
+		border-color: transparent transparent transparent #fff;
+		position: absolute;
+		top: 1.3rem;
+		left: 1rem;
+		transform: rotate(0);
+		transform-origin: .2rem 50%;
+		transition: .25s transform ease;
+	}
+
+	details[open]>summary:before {
+		transform: rotate(90deg);
+	}
+
+	details summary::-webkit-details-marker {
+		display: none;
+	}
+
+	details>ul {
+		padding-bottom: 2rem;
+		margin-bottom: 0;
+	}
+
+	/* Custom elements (boxes, typewriter effect, etc) */
+
+	.container {
+  display: flex;
+  justify-content: space-around
+}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	/* Support for adding background images */
+	.bg-image {
+		background-image: url("/img/background2.png");
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.bg-text {
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 20, 0.4);
+		color: white;
+		font-weight: bold;
+		border: 3px solid #00469b;
+		/* help i cant make it a god damn gradient */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+	}
+
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+	.line-1 {
+		position: relative;
+		top: 50%;
+		width: 24em;
+		margin: 0 auto;
+		border-right: 2px solid rgba(255, 255, 255, .75);
+		font-size: 180%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		transform: translateY(-50%);
+	}
+	.anim-typewriter {
+		animation: typewriter 3s steps(45) 1s 1 normal both,
+			blinkTextCursor 500ms steps(45) infinite normal;
+	}
+	@keyframes typewriter {
+		from {
+			width: 0;
 		}
 
-      /* URL Visit Links */
-      a:link {
-      	color: rgb(1, 23, 224);
-      	background-color: transparent;
-      	text-decoration: none;
-      }
+		to {
+			width: 12em;
+		}
+	}
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: rgba(255, 255, 255, .75);
+		}
 
-      a:visited {
-      	color: rgb(182, 92, 235);
-      	background-color: transparent;
-      	text-decoration: none;
-      }
+		to {
+			border-right-color: transparent;
+		}
+	}
 
-      a:active {
-      	color: rgb(24, 44, 155);
-      	background-color: transparent;
-      }
-      /* URL Visit Links */
+	
+	.module-border-wrap {
+		max-width: 250px;
+		padding: 1rem;
+		position: relative;
+		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+		padding: 3px;
+		filter: drop-shadow(0 0 0.75rem crimson);
+	}
 
-      * {
-      	box-sizing: border-box;
-      }
-
-/* NOTE: MIGHT REMOVE BACKGROUND IMAGE FOR STYLE.CSS, MIGHT BE INCOMPATIBLE.
-
-      /* Support for adding background images */
-      .bg-image {
-      /* The image used */
-      	background-image: url("/img/bgTest1.png");
-      /* Add the blur effect */
-      	filter: blur(15px);
-      	-webkit-filter: blur(15px);
-      /* Full height */
-      	height: 100%;
-      /* Center and scale the image nicely */
-      	background-position: center;
-      	background-repeat: no-repeat;
-      	background-size: cover;
-      }
-
-      /* Position text in the middle of the page/image */
-      .bg-text {
-      	background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      	background-color: rgba(0, 0, 20, 0.4);
-      /* Black w/opacity/see-through */
-      	color: white;
-      	font-weight: bold;
-      	border: 3px solid #00469b;
-      	position: absolute;
-      	top: 50%;
-      	left: 50%;
-      	transform: translate(-50%, -50%);
-      	z-index: 2;
-      	width: 80%;
-      	padding: 20px;
-      	text-align: center;
-      }
-
-      /* Typewriter Effect - Header Start */
-      @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-      .line-1 {
-      	position: relative;
-      	top: 50%;
-      	width: 24em;
-      	margin: 0 auto;
-      	border-right: 2px solid rgba(255, 255, 255, .75);
-      	font-size: 180%;
-      	text-align: center;
-      	white-space: nowrap;
-      	overflow: hidden;
-      	transform: translateY(-50%);
-      }
-
-      /* Animation */
-      .anim-typewriter {
-      	animation: typewriter 3s steps(45) 1s 1 normal both,
-      	blinkTextCursor 500ms steps(45) infinite normal;
-      }
-
-      @keyframes typewriter {
-      from 
-	  {
-      	width: 0;
-      }
-      to 
-	  {
-      	width: 12em;
-      }
-    }
-
-      @keyframes blinkTextCursor {
-      from 
-	  {
-      	border-right-color: rgba(255, 255, 255, .75);
-      }	
-      to 
-	  {
-      	border-right-color: transparent;
-      }
-    }
-
-      /* Style the header */
-      .header {
-      	padding: 30px;
-      	text-align: center;
-      	background: #282828;
-      	color: white;
-      }
-
-      /* Increase the font size of the h1 element */
-      .header h1 {
-      	font-size: 28px;
-      }
-
-      .module-border-wrap {
-      	max-width: 250px;
-      	padding: 1rem;
-      	position: relative;
-      	background: linear-gradient(to right, crimson, rgb(71, 11, 139));
-      	padding: 3px;
-      	filter: drop-shadow(0 0 0.75rem crimson);
-      }
-
-      .module {
-      	background: #222;
-      	color: white;
-      	padding: 2rem;
-      }
-
-      details {
-      	width: 50%;
-      	margin: 0 auto ;
-      	background: #282828;
-      	margin-bottom: .5rem;
-      	box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
-      	border-radius: 5px;
-      	overflow: hidden;
-		   padding-top: 2.2px;
-  		   padding-right: 2.2px;
-  		   padding-bottom: 2.2px;
-      }
-
-      summary {
-      	padding: 1rem;
-      	display: block;
-      	background: #333;
-      	padding-left: 2.2rem;
-      	position: relative;
-      	cursor: pointer;
-
-      }
-
-      summary:before {
-      	content: '';
-      	border-width: .4rem;
-      	border-style: solid;
-      	border-color: transparent transparent transparent #fff;
-      	position: absolute;
-      	top: 1.3rem;
-      	left: 1rem;
-      	transform: rotate(0);
-      	transform-origin: .2rem 50%;
-      	transition: .25s transform ease;
-      }
-
-      details[open] > summary:before {
-      	transform: rotate(90deg);
-      }
-
-      details summary::-webkit-details-marker {
-      	display:none;
-      }
-
-      details > ul {
-      padding-bottom: 1rem;
-      margin-bottom: 0;
-	  }
+	.module {
+		background: #222;
+		color: white;
+		padding: 2rem;
+	}
