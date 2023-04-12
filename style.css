@@ -190,11 +190,13 @@
 	
 	.module-border-wrap {
 		max-width: 250px;
+		font-family: 'Helvetica', sans-serif;
 		padding: 1rem;
 		position: relative;
-		background: linear-gradient(to right, crimson, rgb(71, 11, 139));
+		background: linear-gradient(to right, rgb(245, 202, 212, 0.4), rgb(129, 111, 126, 0.4));
 		padding: 3px;
-		filter: drop-shadow(0 0 0.75rem crimson);
+		border: 2px solid #00469b;
+		filter: drop-shadow(0 0 0.70rem rgb(0, 0, 30, 0.8));
 	}
 
 	.module {
