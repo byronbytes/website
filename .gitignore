@@ -1,2 +1,4 @@
 # Files that shouldn't be seen by others.
 *.json
+nolexa.json
+nolexa_badge.json
