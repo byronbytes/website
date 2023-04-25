@@ -1,9 +1,4 @@
 	/* Default CSS elements (html, footer, URL, li, h4, h1) */
-	@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
-	@import url('https://fonts.googleapis.com/css?family=Raleway:200');
-	@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
-	@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
-
 	body,
 
 	html {
@@ -156,6 +151,7 @@
 		text-align: center;
 	}
 
+	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 	.line-1 {
 		position: relative;
 		top: 50%;
@@ -195,6 +191,7 @@
 	.module-border-wrap {
 		max-width: 250px;
 		font-family: 'Helvetica', sans-serif;
+		padding: 1rem;
 		position: relative;
 		background: linear-gradient(to right, rgb(245, 202, 212, 0.4), rgb(129, 111, 126, 0.4));
 		padding: 3px;
@@ -209,6 +206,9 @@
 	}
 
 	/* Stuff for Playvault: */
+
+	@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
 
 	#box {
 		display: flex;
@@ -241,6 +241,8 @@
 		animation: animatedgradient 3s ease alternate infinite;
 		background-size: 300% 300%;
 	}
+
+	@import url("https://fonts.googleapis.com/css?family=Raleway:400");
 
 	* {
 		box-sizing: border-box;
@@ -341,3 +343,7 @@
 			background-position: 0% 50%;
 		}
 	}
+
+
+
+	@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
