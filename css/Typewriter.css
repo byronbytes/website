@@ -10,7 +10,7 @@ body{
   background-color: rgb(25,25,25);  
 }
 
-.line-1{
+.line-type{
   position: relative;
 		top: 50%;
 		width: 24em;
@@ -24,11 +24,11 @@ body{
 }
 
 /* Animation */
-	.anim-typewriter {
-		animation: typewriter 3s steps(45) 1s 1 normal both,
+	.anim-typewrite {
+		animation: typewrite 3s steps(45) 1s 1 normal both,
 			blinkTextCursor 500ms steps(45) infinite normal;
 	}
-@keyframes typewriter{
+@keyframes typewrite{
   from{width: 0;}
   to{width: 24em;}
 }
