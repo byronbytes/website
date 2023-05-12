@@ -1,5 +1,5 @@
 	/* Default CSS elements (html, footer, URL, li, h4, h1) */
-	body,
+	body, section,
 
 	html {
 		height: 100%;
@@ -112,6 +112,10 @@
 		margin-bottom: 0;
 	}
 
+section {
+  float: left;
+  width: 30%;
+}
 	/* Custom elements (boxes, typewriter effect, etc) */
 
 	.container {
@@ -345,12 +349,5 @@
 			background-position: 0% 50%;
 		}
 	}
-
-section {
-  float: left;
-  width: 30%;
-}
-
-
 
 	@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
