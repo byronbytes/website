@@ -437,7 +437,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: #5162ff;
 }
 
 #hero h2 {
@@ -457,7 +457,7 @@ h6 {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #ffc451;
+  color: #382dcc;
 }
 
 #hero .icon-box h3 {
@@ -533,7 +533,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ffde9e;
+  background: #9edbff;
   margin: 4px 10px;
 }
 
@@ -1428,7 +1428,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 span {
-  color: #ffc451;
+  color: #393cff;
 }
 
 #footer .footer-top .footer-info p {
