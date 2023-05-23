@@ -457,7 +457,7 @@ h6 {
 #hero .icon-box i {
   font-size: 32px;
   line-height: 1;
-  color: #382dcc;
+  color: #4a6cff;
 }
 
 #hero .icon-box h3 {
@@ -475,11 +475,11 @@ h6 {
 }
 
 #hero .icon-box h3 a:hover {
-  color: #ffc451;
+  color: #3e31ff;
 }
 
 #hero .icon-box:hover {
-  border-color: #ffc451;
+  border-color: #1e0fe9;
 }
 
 @media (min-width: 1024px) {
