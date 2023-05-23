@@ -88,7 +88,7 @@ h6 {
   position: fixed;
   top: calc(50% - 0px);
   left: calc(50% - 30px);
-  border: 6px solid #ffc451;
+  border: 6px solid #51b1ff;
   border-top-color: #151515;
   border-bottom-color: #151515;
   border-radius: 50%;
@@ -664,7 +664,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #ffc451;
+  background: #51b9ff;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -691,7 +691,7 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-  color: #ffc451;
+  color: #5162ff;
 }
 
 .services .icon-box p {
