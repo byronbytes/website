@@ -163,12 +163,12 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #ffc451;
+  border: 2px solid #5451ff;
 }
 
 .get-started-btn:hover {
-  background: #ffbb38;
-  color: #343a40;
+  background: #2624a8;
+  color: #535d68;
 }
 
 @media (max-width: 992px) {
@@ -224,7 +224,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffc451;
+  color: #516bff;
 }
 
 .navbar .dropdown ul {
