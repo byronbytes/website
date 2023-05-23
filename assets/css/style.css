@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #4e3dac;
+  background: #1f3ab1;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -163,11 +163,11 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
-  border: 2px solid #403eb9;
+  border: 2px solid #255780;
 }
 
 .get-started-btn:hover {
-  background: #2624a8;
+  background: #1334a0;
   color: #ffffff;
 }
 
