@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #1f1f1f;
 }
 
 a {
@@ -740,8 +740,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #ffc451;
-  border-color: #ffc451;
+  background: #4650d3;
+  border-color: #51b9ff;
   color: #151515;
 }
 
