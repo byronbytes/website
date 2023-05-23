@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #ffc451;
+  color: #51a2ff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffd584;
+  color: #6d62ff;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffc451;
+  background: #4e3dac;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -52,7 +52,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #151515;
+  color: #e2e2e2;
   line-height: 0;
 }
 
@@ -61,7 +61,7 @@ h6 {
 }
 
 .back-to-top:hover i {
-  color: #ffc451;
+  color: #51b1ff;
 }
 
 .back-to-top.active {
@@ -145,7 +145,7 @@ h6 {
 }
 
 #header .logo a span {
-  color: #ffc451;
+  color: #51b9ff;
 }
 
 #header .logo img {
