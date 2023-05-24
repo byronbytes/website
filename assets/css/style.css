@@ -610,7 +610,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #5197ff;
 }
 
 /*--------------------------------------------------------------
@@ -958,7 +958,7 @@ section {
 .counts .content .count-box i {
   display: block;
   font-size: 36px;
-  color: #ffc451;
+  color: #5185ff;
   float: left;
 }
 
@@ -1220,7 +1220,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
+  background: #519aff;
   color: #151515;
   float: left;
   width: 44px;
@@ -1324,7 +1324,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffc451;
+  background: #6851ff;
   border: 0;
   padding: 10px 24px;
   color: #151515;
@@ -1333,7 +1333,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
+  background: #2534dd;
 }
 
 @keyframes animate-loading {
@@ -1455,7 +1455,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #ffc451;
+  background: #51c2ff;
   color: #151515;
   text-decoration: none;
 }
@@ -1480,7 +1480,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ffc451;
+  color: #51c5ff;
   font-size: 18px;
   line-height: 1;
 }
