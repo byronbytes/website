@@ -1503,7 +1503,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ffc451;
+  color: #51aeff;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1529,7 +1529,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #ffc451;
+  background: #51e5ff;
   color: #151515;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
