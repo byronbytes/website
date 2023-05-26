@@ -33,6 +33,13 @@ body {
     font-family: "Raleway", sans-serif;
   }
 
+  .header {
+	padding: 30px;
+	text-align: center;
+	background: #282828;
+	color: white;
+}
+
 /*--------------------------------------------------------------
 # Hyperlinks
 --------------------------------------------------------------*/
@@ -60,7 +67,42 @@ a:hover {
   }
 
 /*--------------------------------------------------------------
-# General
+# Background Image
+--------------------------------------------------------------*/
+
+.container {
+	display: flex;
+	justify-content: space-around
+}
+  
+.bg-image {
+	background-image: url("/img/background2.png");
+	filter: blur(8px);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+  
+.bg-text {
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 20, 0.4);
+	color: white;
+	font-weight: bold;
+	border: 3px solid #00469b;
+	/* help i cant make it a god damn gradient */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+# TBD
 --------------------------------------------------------------*/
 
 
@@ -79,21 +121,8 @@ a:hover {
 		padding-left: 10px;
 	}
 
-
-
-	.header {
-		padding: 30px;
-		text-align: center;
-		background: #282828;
-		color: white;
-	}
-
 	.header h1 {
 		font-size: 28px;
-	}
-
-	h4 {
-		font-size: 25px;
 	}
 
 	li {
@@ -159,42 +188,7 @@ section {
 }
 	/* Custom elements (boxes, typewriter effect, etc) */
 
-	.container {
-  display: flex;
-  justify-content: space-around
-}
 
-	* {
-		box-sizing: border-box;
-	}
-
-	/* Support for adding background images */
-	.bg-image {
-		background-image: url("/img/background2.png");
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
-		height: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	.bg-text {
-		background-color: rgb(0, 0, 0);
-		background-color: rgba(0, 0, 20, 0.4);
-		color: white;
-		font-weight: bold;
-		border: 3px solid #00469b;
-		/* help i cant make it a god damn gradient */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 2;
-		width: 80%;
-		padding: 20px;
-		text-align: center;
-	}
 
 	@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 	.line-1 {
