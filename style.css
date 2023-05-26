@@ -40,6 +40,10 @@ body {
 	color: white;
 }
 
+.header h1 {
+	font-size: 28px;
+}
+
 /*--------------------------------------------------------------
 # Hyperlinks
 --------------------------------------------------------------*/
@@ -89,7 +93,7 @@ a:hover {
 	background-color: rgba(0, 0, 20, 0.4);
 	color: white;
 	font-weight: bold;
-	border: 3px solid #00469b;
+	border: 3px solid #00a3c0;
 	/* help i cant make it a god damn gradient */
 	position: absolute;
 	top: 50%;
@@ -121,18 +125,13 @@ a:hover {
 		padding-left: 10px;
 	}
 
-	.header h1 {
-		font-size: 28px;
-	}
+
 
 	li {
 		font-size: 16px;
 		text-align: center;
 		color: rgb(200, 200, 200)
 	}
-
-
-
 	details {
 		width: 50%;
 		margin: 0 auto;
@@ -276,7 +275,7 @@ section {
 		left: calc(-1 * var(--borderWidth));
 		height: calc(100% + var(--borderWidth) * 2);
 		width: calc(100% + var(--borderWidth) * 2);
-		background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+		background: linear-gradient(60deg, #f4f733, #55f362, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 		border-radius: calc(2 * var(--borderWidth));
 		z-index: -1;
 		animation: animatedgradient 3s ease alternate infinite;
