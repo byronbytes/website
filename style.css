@@ -1,12 +1,68 @@
-	/* Default CSS elements (html, footer, URL, li, h4, h1) */
-	body, section,
+/*
+    Revamped Style CSS
+    Created by: @byronbytes
+    Version: v1.0
+    Made for: https://byron.lol
+*/
 
-	html {
-		height: 100%;
-		font-family: 'Anonymous Pro', monospace;
-		background-color: #1e1e1e;
-		scroll-behavior: smooth;
-	}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+html {
+	height: 100%;
+	font-family: 'Anonymous Pro', monospace;
+	background-color: #1e1e1e;
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #111111;
+  }
+
+  h1,
+  h2,
+  h3
+  h4 {
+	font-size: 25px;
+}
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+/*--------------------------------------------------------------
+# Hyperlinks
+--------------------------------------------------------------*/
+
+a:link {
+	color: rgb(52, 163, 253);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(182, 92, 235);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:active {
+	color: rgb(24, 44, 155);
+	background-color: transparent;
+}
+
+a:hover {
+	color: #5d26db;
+	text-decoration: none;
+  }
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
 
 	.footer {
 		position: relative;
@@ -23,22 +79,7 @@
 		padding-left: 10px;
 	}
 
-	a:link {
-		color: rgb(1, 23, 224);
-		background-color: transparent;
-		text-decoration: none;
-	}
 
-	a:visited {
-		color: rgb(182, 92, 235);
-		background-color: transparent;
-		text-decoration: none;
-	}
-
-	a:active {
-		color: rgb(24, 44, 155);
-		background-color: transparent;
-	}
 
 	.header {
 		padding: 30px;
